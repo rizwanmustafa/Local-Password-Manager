@@ -1,6 +1,5 @@
-import hashlib
-
-
+# Prints a prompt and validates the user input
+# If the input is valid, it is returned else the user is asked for valid input two more times and then the program exits
 def GetNumberInput(printString: str, minLimit: int = None, maxLimit: int = None) -> int:
     userTries = 0
     while True:
@@ -18,6 +17,6 @@ def GetNumberInput(printString: str, minLimit: int = None, maxLimit: int = None)
             print()
             exit()
 
-
+# A special case of GetNumberInput where only bool input in the form of binary is accepted
 def GetBoolInput(printString: str) -> bool:
     return GetNumberInput(printString, 0, 1).__bool__()
