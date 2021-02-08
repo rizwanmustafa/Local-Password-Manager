@@ -1,5 +1,3 @@
-from mysql.connector.connection import MySQLConnection
-from mysql.connector.connection_cext import CMySQLConnection
 from Utility import GetNumberInput
 from getpass import getpass
 import mysql.connector
